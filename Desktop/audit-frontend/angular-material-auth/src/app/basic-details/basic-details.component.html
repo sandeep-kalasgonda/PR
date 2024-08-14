@@ -1,0 +1,78 @@
+<form class="two-column-form">
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input
+        matInput
+        placeholder="First Name"
+        [(ngModel)]="firstName"
+        name="firstName"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input
+        matInput
+        placeholder="Last Name"
+        [(ngModel)]="lastName"
+        name="lastName"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        placeholder="Email"
+        [(ngModel)]="email"
+        name="email"
+        type="email"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Mobile</mat-label>
+      <input
+        matInput
+        placeholder="Mobile"
+        [(ngModel)]="mobile"
+        name="mobile"
+        type="tel"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+        name="password"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Confirm Password</mat-label>
+      <input
+        matInput
+        type="password"
+        placeholder="Confirm Password"
+        [(ngModel)]="confirmPassword"
+        name="confirmPassword"
+        required
+      />
+    </mat-form-field>
+  </div>
+</form>

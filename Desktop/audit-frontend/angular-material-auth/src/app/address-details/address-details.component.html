@@ -1,0 +1,64 @@
+<form class="two-column-form">
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Country</mat-label>
+      <mat-select
+        [(ngModel)]="country"
+        name="country"
+        (selectionChange)="onCountryChange($event)"
+      >
+        <mat-option *ngFor="let country of countries" [value]="country">
+          {{ country }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>State</mat-label>
+      <mat-select
+        [(ngModel)]="state"
+        name="state"
+        (selectionChange)="onStateChange($event)"
+      >
+        <mat-option *ngFor="let state of states" [value]="state">
+          {{ state }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>City</mat-label>
+      <mat-select [(ngModel)]="city" name="city">
+        <mat-option *ngFor="let city of cities" [value]="city">
+          {{ city }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Pincode</mat-label>
+      <input
+        matInput
+        placeholder="Pincode"
+        [(ngModel)]="pincode"
+        name="pincode"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="fill">
+      <mat-label>Address</mat-label>
+      <textarea
+        matInput
+        placeholder="Address"
+        [(ngModel)]="address"
+        name="address"
+        required
+      ></textarea>
+    </mat-form-field>
+  </div>
+</form>
